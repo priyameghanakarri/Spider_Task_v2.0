@@ -1,4 +1,4 @@
-
+//C Program for Quick_Sort
 #include<stdio.h> 
   
 void swap(int* a, int* b) 
@@ -10,16 +10,15 @@ void swap(int* a, int* b)
   
 int partition (int arr[], int low, int high) 
 { 
-    int pivot = arr[high];    // pivot 
-    int i = (low - 1);  // Index of smaller element 
-  
+    int pivot = arr[high];
+    int i = (low - 1); 
     for (int j = low; j <= high- 1; j++) 
     { 
      
          
         if (arr[j] <= pivot) 
         { 
-            i++;    // increment index of smaller element 
+            i++; 
             swap(&arr[i], &arr[j]); 
         } 
     } 
